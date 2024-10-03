@@ -1,0 +1,33 @@
+Files correspond to the simulation scripts for cell pair on a patterned (rectangular) substrate simulation,
+and a paraview state file to visualize the traction map as in the journal submission.
+
+As set, a 5h10min (simulated time) simulation of a cell pair is run with the following parameter values:
+
+kECM = 1.0e-2 N/m
+zeta_AJ = 0.0
+
+Output is in the form of VTP files, such that the evolution of the simulation can be visualized in Paraview.
+
+4 VTP file is created per simulated minute, with * indicating the minute (0-309):
+- cell_cell_fibers_*.vtp        (contains data to visualize fibers)
+- cell_cell_nodes_*.vtp         (contains data to visualize cell nodes and focal adhesions)
+- cell_cell_triangles_*.vtp     (contains data to visualize cell triangles and distinct cell parts, i.e. lamellipodium and lamellum)
+- ground_ground_triangles_*.vtp (contains data to visualize substrate plane and create traction map based on force saved per triangle)
+
+Three files are included:
+
+- multCellSpr.py            (simulation script)
+- PyCmdsMultSim.py          (additional functions used in simulation which are written in Python, not Mpacts commands).
+- supplementary_videos.pvsm (Paraview state file, can be loaded to visualize cell pair and traction map as in the supplementary videos in the journal submission)
+
+To run simulation enter in command line:
+python multCellSpr.py
+
+Documentation for Mpacts commands can be found in the following address:
+http://dev.mpacts.com/documentation/index.html
+
+***
+
+Diego A. Vargas
+January 27, 2020
+
