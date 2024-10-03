@@ -27,7 +27,7 @@ And a video summary can be accessed on Youtube (https://www.youtube.com/watch?v=
 
 The model was developed using the discrete element method (DEM), a particle-based method.It was used to represent both cells and the substrate via nodes. The DEM is meshless, and the bodies (i.e. cells and substrate plane) are built, however, by setting fixed connections between the particles (i.e. nodes) and creating surfaces in three dimensions formed by two-dimensional (2D) elements (i.e. triangular mesh).
 
-![force_schematic](Figures/force_eq.jpg) 
+![force_schematic](Figures/forces_eq.jpg) 
 
 **Figure 2** - (top) Cartoon depicting all the individual cellular components represented either by nodes or fibers. (bottom) Schematic of the forces that define the mechanical interactions.
 
@@ -42,6 +42,12 @@ The approach to determine formation of an focal adhesion (FA) at a node accordin
 **Figure 3** - (left) Dependence of focal adhesion disassembly on force carried by ahesion complex with mechanosensing ON (red) and OFF (blue), and governing equation. (right) Resulting dynamics on a  simple system of a stress fiber with a single adhesion at each end: Over time, more force is exerted by actin fibers on stiffer substrates; the build-up of force is also faster on stiffer substrates.
 
 ### Simulations
+
+Simulations were run varying two paramters:
+
+- Substrate stiffness (k_ECM), using values: (1.0e-4 , 3.0e-4 , 5.0e-4 , 1.0e-3, 2.0e-3 , 3.0e-3 , 5.0e-3 , 1.0e-2, 2.0e-2 , 3.0e-2 , 5.0e-2 , 1.0e-1) [N/m]
+
+- Factor describing mechanosensing by FAs (zeta_FA), using three conditions: zeta_FA > zeta_AJ , zeta_FA = zeta_AJ , zeta_FA < zeta_AJ
 
 Simulations match experimental results.
 
