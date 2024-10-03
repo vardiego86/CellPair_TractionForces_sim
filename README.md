@@ -61,7 +61,7 @@ The effect is much more pronounced with the mechanosensing mechanism for focal a
 
 The files provided are required to reproduce simulations presented in the publication.
 
-Work presented in this paper used Mpacts software (https://www.mpacts.com/), which is a closed-source software, originally developed by the MeBioS group at KU Leuven. The program consisted of C++ modules for efficiency and size with Python acting as a glue language.
+Work presented in this paper used Mpacts software (https://www.mpacts.com/), which is a closed-source software, originally developed by the MeBioS group at KU Leuven. The program consists of C++ modules for efficiency and size with Python acting as a glue language.
 
 To ensure reproducibility at the time of publication, a Docker image (www.docker.com/) of the Mpacts platform had been provided. Docker allows recreation of exact runtime computational environment: a ready to be used Linux machine with Mpacts software and its dependencies installed in it.
 
