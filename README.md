@@ -67,6 +67,8 @@ To ensure reproducibility at the time of publication, a Docker image (www.docker
 
 Unfortunately, since publication the MeBioS group did not keep up the repository in which the Docker image was located. This possibly follows commertialization of Mpacts. Nonetheless, I share the code that conveys the methodical process of model development in C++ and Python.
 
+#### Running the code
+
 Running the simulation, would have required only starting the Docker image and entering in the command line:
 *python multCellSpr.py*
 
